@@ -18,13 +18,7 @@ public class LibraryManagementApplication {
         bookRepository.display();
 
 
-//        BookService bookService = (BookService) context.getBean("bookService");
-//
-//        bookService.addBook("Maths");
-//        bookService.addBook("Physics");
-//        bookService.addBook("Chemistry");
-//        bookService.addBook("English");
-//        bookService.addBook("Computer Science");
+
 
     }
 }
