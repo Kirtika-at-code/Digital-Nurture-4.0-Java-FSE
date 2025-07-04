@@ -10,21 +10,14 @@ public class LibraryManagementApplication {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        BookService bookService = (BookService) context.getBean("bookService");
-        bookService.display();
 
+       BookService bookService = (BookService) context.getBean("bookService");
 
-        BookRepository bookRepository = (BookRepository) context.getBean("bookRepo");
-        bookRepository.display();
-
-
-//        BookService bookService = (BookService) context.getBean("bookService");
-//
-//        bookService.addBook("Maths");
-//        bookService.addBook("Physics");
-//        bookService.addBook("Chemistry");
-//        bookService.addBook("English");
-//        bookService.addBook("Computer Science");
+       bookService.addBook("Maths");
+       bookService.addBook("Physics");
+       bookService.addBook("Chemistry");
+       bookService.addBook("English");
+       bookService.addBook("Computer Science");
 
     }
 }

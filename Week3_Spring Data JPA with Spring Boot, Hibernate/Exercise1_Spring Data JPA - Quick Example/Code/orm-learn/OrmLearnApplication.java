@@ -16,30 +16,13 @@ public class OrmLearnApplication {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(OrmLearnApplication.class);
 
-	private static CountryService countryService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(OrmLearnApplication.class, args);
 
 		LOGGER.info("Inside main() method");
 
-		ApplicationContext context = SpringApplication.run(OrmLearnApplication.class, args);
-
-		// get the CountryService bean from the context
-		countryService = context.getBean(CountryService.class);
-
-		// call the test method
-		testGetAllCountries();
-	}
-
-	private static void testGetAllCountries() {
-		LOGGER.info("Start");
-
-		List<Country> countries = countryService.getAllCountries();
-
-		LOGGER.debug("countries={}", countries);
-
-		LOGGER.info("End");
+		
 	}
 
 }
