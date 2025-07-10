@@ -29,10 +29,3 @@ public class CountryController {
     }
 }
 
-//@RequestMapping("/country")
-//    public Country getCountryIndia() {
-//        LOGGER.info("START: getCountryIndia()");
-//        ApplicationContext context = new ClassPathXmlApplicationContext("country.xml");
-//        Country country = context.getBean("country", Country.class);
-//        LOGGER.info("END: getCountryIndia()");
-//        return country;
