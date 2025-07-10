@@ -17,17 +17,6 @@ public class CountryController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CountryController.class);
 
-//    @Autowired
-//    private CountryService countryService;
-//
-//    @GetMapping("/countries/{code}")
-//    public Country getCountry(@PathVariable String code) {
-//        LOGGER.info("START: getCountry({})", code);
-//        Country country = countryService.getCountry(code);
-//        LOGGER.info("END: getCountry({})", code);
-//        return country;
-//    }
-
     @RequestMapping("/country")
     public Country getCountryIndia() {
         LOGGER.info("START: getCountryIndia()");
